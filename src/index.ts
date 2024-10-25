@@ -7,7 +7,7 @@ import cookieParser from "cookie-parser";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 const app = express();
 
 app.use(cookieParser());
@@ -19,6 +19,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:4000",
       "http://localhost:5000",
+      "http://localhost:8000",
     ],
   })
 );
